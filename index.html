@@ -1,1 +1,81 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">\n    <style>\n        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background-color: #F7F3EA; }\n        header { background: #0F2A44; color: #F7F3EA; padding: 20px; text-align: center; }\n        .hero { padding: 50px; background-color: #7FB6B3; text-align: center; }\n        .services, .plans, .about, .contact { max-width: 800px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }\n        footer { text-align: center; padding: 10px; background: #0F2A44; color: #F7F3EA; }\n        .responsive { display: flex; flex-wrap: wrap; justify-content: space-between; }\n        .plan { border: 1px solid #0F2A44; border-radius: 5px; padding: 20px; margin: 10px; flex: 1; min-width: 200px; }\n        @media (max-width: 600px) { .responsive { flex-direction: column; } }\n    </style>\n    <title>SafeGuard Lift & Dock Care</title>\n</head>\n<body>\n    <header>\n        <h1>SafeGuard Lift & Dock Care</h1>\n    </header>\n    <section class="hero">\n        <h2>Welcome to SafeGuard Lift & Dock Care</h2>\n        <img src="path/to/logo.png" alt="Logo">\n    </section>\n    <section class="services">\n        <h2>What We Do</h2>\n        <ul>\n            <li>Service 1</li>\n            <li>Service 2</li>\n            <li>Service 3</li>\n        </ul>\n    </section>\n    <section class="plans">\n        <h2>Plans</h2>\n        <div class="responsive">\n            <div class="plan">\n                <h3>Annual Plan</h3>\n                <p>Price: $299</p>\n            </div>\n            <div class="plan">\n                <h3>Bi-Annual Plan</h3>\n                <p>Price: $449</p>\n            </div>\n        </div>\n    </section>\n    <section class="checklist">\n        <h2>Service Checklist</h2>\n        <ul>\n            <li>Checklist item 1</li>\n            <li>Checklist item 2</li>\n            <li>Checklist item 3</li>\n        </ul>\n    </section>\n    <section class="about">\n        <h2>About Us</h2>\n        <p>Your <strong>SafeGuard</strong> partner in lift and dock care.</p>\n    </section>\n    <section class="contact">\n        <h2>Contact Us</h2>\n        <p>Email: <a href="mailto:safeguardliftdock@gmail.com">safeguardliftdock@gmail.com</a></p>\n        <p>Phone: 910-795-6035</p>\n        <form action="https://formspree.io/f/mxovdpla" method="POST">\n            <label for="name">Name:</label>\n            <input type="text" id="name" name="name" required>\n            <label for="email">Email:</label>\n            <input type="email" id="email" name="email" required>\n            <input type="submit" value="Send">\n        </form>\n    </section>\n    <footer>\n        <p>&copy; 2023 SafeGuard Lift & Dock Care</p>\n    </footer>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeGuard Lift & Dock Care</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #004d00; color: white; padding: 20px; text-align: center; }
+        .hero { background: url('hero-background.jpg') no-repeat center center/cover; height: 400px; display: flex; align-items: center; justify-content: center; color: white; }
+        .services, .plans, .checklist, .about, .contact { padding: 20px; }
+        footer { background-color: #222; color: white; text-align: center; padding: 10px 0; position: relative; bottom: 0; width: 100%; }
+        form { display: flex; flex-direction: column; max-width: 400px; margin: auto; }
+        input, textarea { margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        button { padding: 10px; background-color: #004d00; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #007700; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to SafeGuard Lift & Dock Care</h1>
+</header>
+
+<section class="hero">
+    <h2>Your Safety, Our Priority!</h2>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Lift Inspection</li>
+        <li>Maintenance Services</li>
+        <li>Installation</li>
+        <li>Emergency Repairs</li>
+    </ul>
+</section>
+
+<section class="plans">
+    <h2>Our Plans</h2>
+    <table>
+        <tr><th>Plan</th><th>Price</th></tr>
+        <tr><td>Basic Plan</td><td>$99/month</td></tr>
+        <tr><td>Standard Plan</td><td>$149/month</td></tr>
+        <tr><td>Premium Plan</td><td>$199/month</td></tr>
+    </table>
+</section>
+
+<section class="checklist">
+    <h2>Safety Checklist</h2>
+    <ul>
+        <li>Check lift functionality</li>
+        <li>Inspect cables</li>
+        <li>Test emergency brakes</li>
+        <li>Check for any wear and tear</li>
+    </ul>
+</section>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>At SafeGuard Lift & Dock Care, we prioritize safety and reliability. Our team of experts is dedicated to providing top-notch service.</p>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mxovdpla" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <p>Email: safeguardliftdock@gmail.com</p>
+    <p>Phone: 910-795-6035</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 SafeGuard Lift & Dock Care</p>
+</footer>
+
+</body>
+</html>
