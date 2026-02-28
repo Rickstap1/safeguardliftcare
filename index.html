@@ -1,81 +1,234 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SafeGuard Lift & Dock Care</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        header { background-color: #004d00; color: white; padding: 20px; text-align: center; }
-        .hero { background: url('hero-background.jpg') no-repeat center center/cover; height: 400px; display: flex; align-items: center; justify-content: center; color: white; }
-        .services, .plans, .checklist, .about, .contact { padding: 20px; }
-        footer { background-color: #222; color: white; text-align: center; padding: 10px 0; position: relative; bottom: 0; width: 100%; }
-        form { display: flex; flex-direction: column; max-width: 400px; margin: auto; }
-        input, textarea { margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
-        button { padding: 10px; background-color: #004d00; color: white; border: none; border-radius: 5px; cursor: pointer; }
-        button:hover { background-color: #007700; }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SafeGuard Lift & Dock Care</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--navy:#0F2A44;
+--teal:#7FB6B3;
+--cream:#F7F3EA;
+--muted:#5f6b75;
+}
+
+body{
+margin:0;
+font-family:Montserrat, sans-serif;
+background:var(--cream);
+color:var(--navy);
+}
+
+.wrap{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+h1,h2,h3{margin:0;}
+
+.hero{
+text-align:center;
+padding:60px 20px 40px;
+}
+
+.hero img{
+max-width:420px;
+width:85%;
+}
+
+.hero h1{
+margin-top:25px;
+font-size:20px;
+letter-spacing:2px;
+text-transform:uppercase;
+font-weight:900;
+}
+
+.hero ul{
+list-style:none;
+padding:0;
+margin:30px 0;
+font-weight:900;
+font-size:32px;
+line-height:1.2;
+}
+
+.hero ul li{margin:12px 0;}
+
+.promise{
+font-size:34px;
+font-weight:900;
+margin-top:15px;
+}
+
+.section{
+padding:60px 0;
+border-top:1px solid rgba(0,0,0,.06);
+}
+
+.kicker{
+color:var(--teal);
+text-transform:uppercase;
+font-weight:900;
+letter-spacing:4px;
+font-size:14px;
+}
+
+.what-list{
+list-style:none;
+padding:0;
+margin-top:25px;
+font-weight:900;
+text-transform:uppercase;
+line-height:1.6;
+font-size:20px;
+}
+
+.what-list li{margin:10px 0;}
+
+.plan-block{
+border:1px solid rgba(0,0,0,.1);
+border-radius:16px;
+padding:20px;
+margin-top:20px;
+background:white;
+}
+
+.plan-name{
+font-weight:900;
+text-transform:uppercase;
+font-size:16px;
+letter-spacing:1px;
+}
+
+.plan-desc{
+margin-top:8px;
+color:var(--muted);
+font-size:14px;
+font-weight:600;
+}
+
+.plan-prices{
+margin-top:12px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+font-weight:900;
+text-transform:uppercase;
+font-size:13px;
+}
+
+@media(max-width:600px){
+.plan-prices{grid-template-columns:1fr;}
+.hero ul{font-size:26px;}
+.promise{font-size:26px;}
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:14px 22px;
+background:var(--teal);
+color:var(--navy);
+border-radius:999px;
+font-weight:900;
+text-decoration:none;
+}
+
+.footer{
+padding:30px 0;
+text-align:center;
+color:var(--muted);
+font-size:13px;
+border-top:1px solid rgba(0,0,0,.05);
+margin-top:60px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>Welcome to SafeGuard Lift & Dock Care</h1>
-</header>
+<div class="hero">
+<img src="logo.png" alt="SafeGuard Logo">
+<h1>Preventative Boat Lift & Dock Maintenance</h1>
 
-<section class="hero">
-    <h2>Your Safety, Our Priority!</h2>
-</section>
+<ul>
+<li>- Waterfront homeowners</li>
+<li>- Absentee / seasonal owners</li>
+<li>- Rental properties</li>
+<li>- Property managers</li>
+</ul>
 
-<section class="services">
-    <h2>Our Services</h2>
-    <ul>
-        <li>Lift Inspection</li>
-        <li>Maintenance Services</li>
-        <li>Installation</li>
-        <li>Emergency Repairs</li>
-    </ul>
-</section>
+<div class="promise">
+We catch problems before they become emergency repairs.
+</div>
+</div>
 
-<section class="plans">
-    <h2>Our Plans</h2>
-    <table>
-        <tr><th>Plan</th><th>Price</th></tr>
-        <tr><td>Basic Plan</td><td>$99/month</td></tr>
-        <tr><td>Standard Plan</td><td>$149/month</td></tr>
-        <tr><td>Premium Plan</td><td>$199/month</td></tr>
-    </table>
-</section>
+<div class="wrap">
 
-<section class="checklist">
-    <h2>Safety Checklist</h2>
-    <ul>
-        <li>Check lift functionality</li>
-        <li>Inspect cables</li>
-        <li>Test emergency brakes</li>
-        <li>Check for any wear and tear</li>
-    </ul>
-</section>
+<div class="section">
+<div class="kicker">Safety-first inspections and routine service for Wilmington waterfront homes.</div>
+<h2 style="margin-top:15px;">What We Do</h2>
 
-<section class="about">
-    <h2>About Us</h2>
-    <p>At SafeGuard Lift & Dock Care, we prioritize safety and reliability. Our team of experts is dedicated to providing top-notch service.</p>
-</section>
+<ul class="what-list">
+<li>~ Lift lubrication & adjustment</li>
+<li>~ Cable inspection & condition reporting</li>
+<li>~ Bunk leveling & guide alignment</li>
+<li>~ Limit switch verification</li>
+<li>~ Minor dock repairs & hardware replacement</li>
+<li>~ Photo-documented inspection reports</li>
+</ul>
+</div>
 
-<section class="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/mxovdpla" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-    <p>Email: safeguardliftdock@gmail.com</p>
-    <p>Phone: 910-795-6035</p>
-</section>
+<div class="section">
+<h2>Plans</h2>
 
-<footer>
-    <p>&copy; 2026 SafeGuard Lift & Dock Care</p>
-</footer>
+<div class="plan-block">
+<div class="plan-name">Annual Preventative Plan</div>
+<div class="plan-desc">
+1 scheduled visit per year. Ideal for homeowners who want routine lift care without emergency surprises.
+</div>
+<div class="plan-prices">
+<div><strong>1 Lift:</strong> $299</div>
+<div><strong>2 Lifts:</strong> $449</div>
+<div><strong>3 Lifts:</strong> $574</div>
+<div><strong>Each Additional:</strong> +$125</div>
+</div>
+</div>
+
+<div class="plan-block">
+<div class="plan-name">Bi-Annual Preferred Plan</div>
+<div class="plan-desc">
+2 visits per year (spring & fall). Best for saltwater exposure, absentee owners, and multi-lift docks.
+</div>
+<div class="plan-prices">
+<div><strong>1 Lift:</strong> $449</div>
+<div><strong>2 Lifts:</strong> $649</div>
+<div><strong>3 Lifts:</strong> $824</div>
+<div><strong>Each Additional:</strong> +$175</div>
+</div>
+</div>
+
+<p style="margin-top:20px;font-size:14px;color:var(--muted);">
+Includes inspection, lubrication, adjustments, and photo-documented Pass / Watch / Fix report.
+Multi-lift pricing reflects additional time and materials while discounting shared travel/setup.
+</p>
+
+<a class="button" href="mailto:service@safeguardliftcare.com">
+Request Service
+</a>
+
+</div>
+
+</div>
+
+<div class="footer">
+SafeGuard Lift & Dock Care • SafeGuard Coastal Services, LLC • Wilmington, NC
+</div>
 
 </body>
 </html>
