@@ -167,6 +167,38 @@ font-size:13px;
 border-top:1px solid rgba(0,0,0,.05);
 margin-top:60px;
 }
+.footer{
+padding:30px 0;
+text-align:center;
+color:var(--muted);
+font-size:13px;
+border-top:1px solid rgba(0,0,0,.05);
+margin-top:60px;
+}
+
+/* PASTE NEW FORM CSS BELOW THIS LINE */
+
+.contact-form{
+  margin-top:14px;
+  display:grid;
+  gap:10px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+  width:100%;
+  padding:12px;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,.12);
+  font:inherit;
+  background:#fff;
+}
+
+.contact-form textarea{
+  min-height:120px;
+  resize:vertical;
+} 
 </style>
 </head>
 
@@ -291,6 +323,41 @@ Request Service
   <a class="button" href="mailto:service@safeguardliftcare.com?subject=Storm%20Service%20Request">
     Request Storm Service
   </a>
+</div>
+<div class="section" id="contact">
+  <div class="kicker">Request Service</div>
+  <h2 style="margin-top:15px;">Quick Contact Form</h2>
+
+  <div class="plan-block">
+    <div class="plan-desc" style="margin-top:0;">
+      Tell us the address and number of lifts. We’ll reply with scheduling options.
+    </div>
+
+    <form action="https://formspree.io/f/https://formspree.io/f/xojnzlkq" method="POST" class="contact-form">
+      <input name="name" placeholder="Name" required>
+      <input name="phone" placeholder="Phone (optional)">
+      <input name="email" type="email" placeholder="Email" required>
+      <input name="address" placeholder="Service Address" required>
+
+      <select name="lifts">
+        <option value="">Number of lifts (optional)</option>
+        <option>1</option><option>2</option><option>3</option><option>4+</option>
+      </select>
+
+      <textarea name="message" placeholder="What do you need? (Annual plan / Bi-annual / service call / storm check / PM/HOA)"></textarea>
+
+      <!-- Spam honeypot -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button class="button" type="submit" style="border:none; cursor:pointer;">
+        Send Request
+      </button>
+    </form>
+
+    <p style="margin-top:12px;font-size:13px;color:var(--muted);">
+      We respond quickly during business hours. Storm requests are prioritized for plan members.
+    </p>
+  </div>
 </div>
 </div>
 
